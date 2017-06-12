@@ -1,0 +1,360 @@
+@media (min-width: 1300px) {
+.container {
+    width: 1240px;
+}
+}
+@media (min-width: 1400px) {
+.container {
+    width: 1340px;
+}
+}
+@media (min-width: 1500px) {
+.container {
+    width: 1440px;
+}
+}
+@media (min-width: 1720px) {
+.container {
+    width: 1600px;
+}
+}
+
+
+html,body {
+width: 100%;
+    height: 100%;
+
+
+	
+
+/*width: 100%;
+max-width: 100%;
+min-height: auto;*/
+
+
+}
+
+
+.starter-template {
+  padding: 60px 15px;
+  text-align: center;
+}
+
+.starter-template-footer{
+
+text-align: center;
+color: 
+
+
+
+
+
+}
+
+.contact-form{
+	width: 370px;
+	height: 310px;
+	background-color: rgba(167, 161, 161, 0.8);
+	position: absolute;
+	  top: 59%;
+    left: 68%;
+   
+    margin-top:auto;
+    border-radius: 5px;
+	-webkit-background-size:  cover;
+    -moz-background-size:  cover  ;
+     -o-background-size:  cover  ;
+}
+
+.contact-form input[type=text] {
+	background-color: #ccc;
+	/*margin: 10px;*/
+	width: 310px;
+	height: 50px;
+	margin-bottom: 10px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	border-width: 0;
+	padding-left: 10px;
+	color: #2e333f;
+	font-size: 20px;
+}
+
+.contact-form input [type=submit] {
+	margin-top: 10px;
+	height: 60px;
+	width: 310px;
+	border-radius: 5px;
+	background: #5dbdfe;
+	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	border-width: 0;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+	.contact-form input[type=submit] {
+	margin-top: 10px;
+	height: 60px;
+	width: 310px;
+	border-radius: 5px;
+	background: #5dbdfe;
+	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	border-width: 0;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fields  {
+	margin:30px;
+	width: 310px;
+	height: 50px;
+}
+
+.img-responsive{
+	float: left;
+
+}
+
+.about-us{
+	text-align:center;
+
+}
+
+.avatar{
+
+	float: left;
+	padding-bottom: 60px;
+}
+img.avatar{
+	padding: 15px;
+	margin-right: 15px;
+}
+
+.block{
+	position: relative;
+	bottom: 60px;
+}
+
+
+.border-bg{
+	background: url(../images/image-fon.jpg)no-repeat center  ;
+	-webkit-background-size:  cover;
+    -moz-background-size:  cover  ;
+     -o-background-size:  cover  ;
+		display: inline-block ;
+	width: 1920px;
+	height: 1020px;
+	margin-left: -50px;
+	position: relative;
+	top: -62px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	
+
+
+
+
+}
+
+#f-text{
+	color:#fff;
+	text-align: center;
+}
+#f-text2{
+	color:#fff;
+	text-align: center;
+}
+
+p.lead{
+	padding-top: 50px;
+}
+
+p.title{
+	color: #5dbdfe;
+}
+
+/*.FAQ{
+	background: url(../images/FAQ-bg.jpg)no-repeat center  ;
+	-webkit-background-size:  cover;
+    -moz-background-size:  cover  ;
+     -o-background-size:  cover  ;
+		display: inline-block ;
+	width: 1920px;
+	height: 1020px;
+	margin-left: -50px;
+	position: relative;
+	top: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+}*/
+
+.accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion_item {
+  border-bottom: 1px solid #5a95fd;
+}
+.accordion_item:last-of-type {
+  border-bottom: none;
+}
+
+/**
+ * Элемент label который запускает открыть/закрыть.
+ */
+.accordion_trigger {
+  display: block;
+  background-color: #ff4538;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+
+
+}
+
+/**
+ * эти элементы radio/checkbox всегда должны быть скрыты.
+ */
+.accordion_toggle {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/**
+ * скрытое содержание аккордеона.
+ */
+.accordion_target {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ff4538;
+  color: #ddd;   
+}
+/**
+* когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
+*/
+.accordion_toggle:checked + .accordion_target {
+  position: static;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  margin: auto;
+  clip: auto;
+  padding: 1.5rem;
+ /* задержка появления  функция анимации */
+ -webkit-animation:fadeIn ease-in 0.7s; 
+ -moz-animation:fadeIn ease-in 0.7s;
+ animation:fadeIn ease-in 0.7s;   
+}
+/* анимация при появлении блоков с содержанием */
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+
+
+#home {
+background: url("../images/FAQ-bg.jpg");
+background-attachment: fixed;
+background-origin: initial;
+background-clip: initial;
+background-size: cover;
+background-repeat:no-repeat;
+background-position:100% 0;
+position:relative;
+min-height:1080px;
+}
+
+
+div.scrollup {
+  position: fixed; /* фиксированная позиция */
+   /* цвет заднего фона */
+  right: 20px; /* расстояние от правого края */
+  bottom: 600px; /* расстояние от нижнего края */
+  padding: 4px 10px; /* отступы до содержимого блока */
+  font-size: 20px; /* размер шрифта (иконки) */
+  border-top-left-radius: 4px; /* скругление верхнего левого угла */
+  border-top-right-radius: 4px; /* скругление верхнего правого угла */
+  cursor: pointer; /* форма курсора */
+  display: none; /* не отображать элемент */
+  text-align: center; /*выравнивание содержимого элемента по центру */
+}
+div.scrollup:hover {
+  background-color: #5dbdfe; /* цвет заднего фона при наведении */
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 280px;
+}
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+} 
+
+
+.border-bg-23{
+	background: url(../images/footer-fon.jpg)no-repeat center  ;
+	-webkit-background-size:  cover;
+    -moz-background-size:  cover  ;
+     -o-background-size:  cover  ;
+		display: inline-block ;
+	width: 100%;
+	height: 985px;
+	margin-left: -50px;
+	position: relative;
+	top: -62px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+	
+	.social{
+		float: left;
+		vertical-align: middle;
+
+		/*position: relative;
+	  top: 50%;
+    left: 690px;*/
+    position: absolute;
+    top: 50%;
+    padding-left: 38%;
+   
+
+	}
